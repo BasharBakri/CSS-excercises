@@ -10,17 +10,38 @@
     <style>
         * {
             font-family: Arial, Helvetica, sans-serif;
+            margin: 0%;
+            padding: 0%;
           }
         body {
             background: url(./images2/pexels-hasan-albari-1229861.jpg) no-repeat center/cover;
           }
-        #header1 {
-            color: f5edce;
-            text-shadow: 1px 1px beige;
-            float: right;
+        .btn-group .button {
+            background-color:rgb(93,74,68);
+            max-width: 100%;
+            top: 0%;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+            cursor: pointer;
+            }
+
+        .btn-group .button:hover {
+            background-color: rgb(44,37,55);
+            }
+        .btn-group {
+            position: fixed;
+            display: block;
+            z-index: 2;
         }
-        #section1 {
-            color: darkgrey;
+        #header1 {
+            color: black;
+            text-shadow: 1px 1px rgb(11,23,47);
+            
         }
         #footer1 p {
             color:brown;
@@ -30,13 +51,20 @@
             height: 200px;
         }
         .box {
-            
+
             width: 200px;
             border: 3px solid coral;
         }
     </style>
 </head>
 <body>
+    <nav class="btn-group">
+        <button class="button">Social media 1</button>
+        <button class="button">Social media 2</button>
+        <button class="button">Social media 3</button>
+        <button class="button">Social media 4</button>
+    </nav>
+      
     <header id="header1">
     <article id="headerarticle1">
         <h2> 
