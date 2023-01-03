@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing page</title>
+  <style>
+    /* when u viewing a website no matter size of browser it is divided into 100 vh and 100 vw */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header {
+      background: black url(https://images.unsplash.com/photo-1672576796927-994161aa321d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3MjczNDkxMQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080) no-repeat center center/cover;
+      color: darkred;
+      height: 100vh;
+      text-align: center;
+      padding: 2rem;
+      padding-top: 8rem;
+    }
+    header h1 {
+      font-size: 6vw;
+    }
+    header p {
+      margin: 1rem 0;
+      font-size: 3vw;
+    }
+    .btn {
+      display: inline-block;
+      background: lightgray;
+      color: black;
+      border: 1px black solid;
+      padding: 0.75rem 1rem;
+      margin-top: 10vh;
+    }
+    @media(max-height: 450px) {
+      header {
+        padding-top: 2rem;
+      }
+    }
+    @media(min-width: 450px) {
+      header p {
+        padding: 2rem;
+      }
+    }
+    @media(min-width: 1000px) {
+      header {
+        padding: 5rem;
+      }
+      .btn {
+        margin-top: 1rem;
+      }
+    }
+    @media(max-height: 500px) {
+      header h1 {
+        font-size: 3vw;
+    }
+    header p {
+      font-size: 2vw;
+    }
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Random landing page</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, suscipit!</p>
+    <a href="#" class="btn">Click here to buy this forest!!</a>
+  </header>
+</body>
+</html>
