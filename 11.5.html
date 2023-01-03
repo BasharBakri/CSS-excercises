@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11.5</title>
+  <style>
+    .flex {
+      display: flex;
+      justify-content: flex-end;
+      background: grey;
+    }
+    .box a {
+      padding: 5px;
+      text-decoration: none;
+    }
+    .box1 {
+      display: block;
+      width: 100%;
+      justify-self: flex-start;
+    }
+    @media (max-width: 500px) or (max-height: 500px) {
+      .flex {
+        display: flex;
+        flex-direction: column;
+        font-size: xx-large;
+        justify-items: center;
+        align-items: center;
+      }
+      .box {
+        margin-bottom: 10px;
+      }
+      .box1 {
+        width:auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="flex">
+    <section class="box box1">
+     <a href="#">Apple seeds</a>
+  </section>
+  <section class="box box2">
+    <a href="#">Home</a> 
+  </section>
+    <section class="box box3">
+      <a href="#">About</a> 
+    </section>
+    <section class="box box4">
+      <a href="#">Portfolio</a> 
+    </section>
+    <section class="box box5">
+      <a href="#">Contact</a> 
+    </section>
+  </section>
+</body>
+</html>
