@@ -6,27 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>12.4</title>
   <style>
-    #div {
-      position: relative;
-      width: 100vh;
-      height: 11vh;
-      border: 1px red solid;
-      text-align: center;
-      }
-    #div::after {
-      display: block;
-        position: absolute;
-        content:'';
-        border-right:50vh solid white;
-        border-left:100vh solid white;
-        height: 30vh;
-        width: 30vh;
-        top:18px;
-        left: 0;
-    }
+    .text {
+  position: relative;
+  display: inline-block;
+}
+
+.text::before,
+.text::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+}
+
+.text::before {
+  top: -2px;
+  left: -2px;
+  border-right: transparent;
+}
+
+.text::after {
+  bottom: -5px;
+  right: -5px;
+  border-left: transparent;
+}
+
   </style>
 </head>
 <body>
-  <div id="div">border</div>
+  <section class="text">
+    not a cool border
+  </section>  
 </body>
 </html>
