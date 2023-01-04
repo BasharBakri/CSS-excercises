@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12.4</title>
+  <style>
+    #div {
+      position: relative;
+      width: 100vh;
+      height: 11vh;
+      border: 1px red solid;
+      text-align: center;
+      }
+    #div::after {
+      display: block;
+        position: absolute;
+        content:'';
+        border-right:50vh solid white;
+        border-left:100vh solid white;
+        height: 30vh;
+        width: 30vh;
+        top:18px;
+        left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="div">border</div>
+</body>
+</html>
